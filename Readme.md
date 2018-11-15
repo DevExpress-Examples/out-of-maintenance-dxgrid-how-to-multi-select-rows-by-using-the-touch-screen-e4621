@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [GridMultiTouchBehavior.cs](./CS/GridMultiTouchProject/GridMultiTouchBehavior.cs) (VB: [GridMultiTouchBehavior.vb](./VB/GridMultiTouchProject/GridMultiTouchBehavior.vb))
+* [MainWindow.xaml](./CS/GridMultiTouchProject/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/GridMultiTouchProject/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/GridMultiTouchProject/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/GridMultiTouchProject/MainWindow.xaml))
+<!-- default file list end -->
 # DXGrid: how to Multi- select rows by using the touch screen.
 
 
