@@ -1,5 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
@@ -10,6 +9,7 @@ Imports DevExpress.Xpf.Grid
 Namespace GridMultiTouchProject
 	Friend Class GridMultiTouchBehavior
 		Inherits Behavior(Of GridControl)
+
 		Protected Overrides Sub OnAttached()
 			MyBase.OnAttached()
 			owner = Me.AssociatedObject
@@ -48,7 +48,7 @@ Namespace GridMultiTouchProject
 				End If
 			End If
 			If _isCanMultiSelect Then
-				If (Not _isMultiSelection) Then
+				If Not _isMultiSelection Then
 					_isMultiSelection = True
 					_startRowSelect = Me.tableView1.FocusedRowHandle
 					_finishRowSelect = Me.tableView1.FocusedRowHandle
