@@ -9,8 +9,8 @@
 This example allows touchscreen users to select a range of rows.
 
 1. Create a behavior that implements the following capabilities:
-   * Press and hold a row to select the first selected item.
-   * Press and hold a row to select the last selected item.
+   * Press and hold a row to select the first item.
+   * Press and hold a row to select the last item.
    * Tap a row to reset the selection.
 2. Attach this behavior to the [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl).
 3. Set the [DataControlBase.SelectionMode](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.DataControlBase.SelectionMode) property to `Row`.
