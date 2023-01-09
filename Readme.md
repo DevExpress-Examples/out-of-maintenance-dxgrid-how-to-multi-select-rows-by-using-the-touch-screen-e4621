@@ -3,21 +3,31 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E4621)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# WPF Data Grid - Select Multiple Rows with the Touch Screen
+
+This example allows touchscreen users to select a range of rows.
+
+1. Create a behavior that implements the following capabilities:
+   * Press and hold a row to select the first selected item.
+   * Press and hold a row to select the last selected item.
+   * Tap a row to reset the selection.
+2. Assign this behavior to the [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl).
+3. Set the [DataControlBase.SelectionMode](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.DataControlBase.SelectionMode) property to `Row`.
+
+## Files to Review
 
 * [GridMultiTouchBehavior.cs](./CS/GridMultiTouchProject/GridMultiTouchBehavior.cs) (VB: [GridMultiTouchBehavior.vb](./VB/GridMultiTouchProject/GridMultiTouchBehavior.vb))
 * [MainWindow.xaml](./CS/GridMultiTouchProject/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/GridMultiTouchProject/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/GridMultiTouchProject/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/GridMultiTouchProject/MainWindow.xaml.vb))
-<!-- default file list end -->
-# DXGrid: how to Multi- select rows by using the touch screen.
 
+## Documentation
 
-<p>To implement it, you can create an attached behavior as shown below.</p><p><br />
-1. To create an attached behavior, you can add a reference on the library System.Windows.Interactivity. (you may find it at /DevExpress/Dxepirience XX.X/Bin/Framework/System.Windows.Interactivity.dll)</p><p><br />
-2. On creation of this behavior you have this additional capability:</p><p>- press and hold to select start row.</p><p>- press and hold to select finish row. (you can select the finish row multiple times)</p><p>- tap any row to deselect rows.</p><p><br />
-For this example, your grid's View should be TableView and property MultiSelectMode should be Row.</p>
+* [Multiple Row Selection](https://docs.devexpress.com/WPF/7359/controls-and-libraries/data-grid/focus-navigation-selection/multiple-row-selection)
+* [DataControlBase.SelectionMode](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.DataControlBase.SelectionMode)
 
-<br/>
+## More Examples
 
-
+* [WPF Data Grid - Select Rows that Contain a Specific Value](https://github.com/DevExpress-Examples/wpf-data-grid-select-rows-that-contain-specific-value)
+* [WPF Data Grid - Bind Selected Rows to a ViewModel Property](https://github.com/DevExpress-Examples/wpf-data-grid-bind-selected-rows-to-viewmodel-property)
+* [WPF Data Grid - Change the Appearance of Focused and Selected Rows](https://github.com/DevExpress-Examples/how-to-change-the-appearance-of-a-focused-data-row-and-selected-rows-e2066)
