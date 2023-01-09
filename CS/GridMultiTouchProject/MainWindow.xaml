@@ -4,19 +4,17 @@
     xmlns:local="clr-namespace:GridMultiTouchProject"
     xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
     xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
-     xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
     x:Class="GridMultiTouchProject.MainWindow"
-    Title="DXApplication" Height="700" Width="1100"
-    SnapsToDevicePixels="True" UseLayoutRounding="True"
-    >
+    Title="DXApplication" Height="700" Width="1100">
     <Grid>
-        <dxg:GridControl AutoPopulateColumns="True" HorizontalAlignment="Left" Height="455" Margin="197,115,0,0" VerticalAlignment="Top" Width="615" ItemsSource="{Binding ListPerson}">
+        <dxg:GridControl x:Name="grid" AutoGenerateColumns="AddNew" SelectionMode="Row">
             <dxg:GridControl.View>
-                <dxg:TableView MultiSelectMode="Row"/>
+                <dxg:TableView/>
             </dxg:GridControl.View>
-            <i:Interaction.Behaviors>
+            <dxmvvm:Interaction.Behaviors>
                 <local:GridMultiTouchBehavior />
-            </i:Interaction.Behaviors>
+            </dxmvvm:Interaction.Behaviors>
         </dxg:GridControl>
     </Grid>
 </Window>

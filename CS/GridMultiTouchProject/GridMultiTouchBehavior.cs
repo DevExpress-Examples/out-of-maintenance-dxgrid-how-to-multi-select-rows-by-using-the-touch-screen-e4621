@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Interactivity;
+﻿using DevExpress.Mvvm.UI.Interactivity;
 using DevExpress.Xpf.Grid;
 
 namespace GridMultiTouchProject {
@@ -23,8 +18,8 @@ namespace GridMultiTouchProject {
         TableView tableView1;
 
         void SelectRows() {
-            this.tableView1.ClearSelection();
-            this.tableView1.SelectRange(_startRowSelect, _finishRowSelect);
+            this.owner.UnselectAll();
+            this.owner.SelectRange(_startRowSelect, _finishRowSelect);
         }
 
         void tableView1_ShowingEditor(object sender, ShowingEditorEventArgs e) {
